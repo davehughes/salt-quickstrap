@@ -22,3 +22,9 @@ make highstate
 
 You should now be able to develop salt states locally on you dev machine and
 run `make highstate` to sync and apply them.
+
+Caveats and TODONTs:
+--------------------
++ If you point this at an existing salt install that you value, you will be sad.  Probably don't!
++ Targets Ubuntu 16.04 LTS and no other OS/version! If you're using something else, it will need to be tweaked.
++ No `salt` command helpers, so you're on your own to run those in an SSH session/custom Makefile rule
